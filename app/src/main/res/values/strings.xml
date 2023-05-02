@@ -20,4 +20,11 @@
     <string name="FinishQuiz">Exit</string>
     <string name="donateH1">Donate Books Info </string>
     <string name="BookTitle">Enter Book Title</string>
+    <string name="_10_questions">10 Questions</string>
+    <string name="show">Show</string>
+    <string name="grade_11_maths">Grade11 Maths</string>
+    <string name="add_quizes">Add Quizes</string>
+    <string name="_15_questions">15 Questions</string>
+    <string name="quizes1">Quizes 01</string>
+    <string name="garde_7_maths">Grade 7 maths</string>
 </resources>

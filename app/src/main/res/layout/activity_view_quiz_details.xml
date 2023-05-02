@@ -5,13 +5,13 @@
     android:id="@+id/NoOfQuizes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.Add_Quiz_Info">
+    tools:context=".Activities.View_Quiz_Details">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="452dp"
+        android:layout_width="397dp"
+        android:layout_height="314dp"
+        android:layout_marginBottom="420dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,7 +22,7 @@
         android:id="@+id/AddQuiz1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/oswald"
         android:shadowColor="#0E0E0E"
         android:shadowDx="100"
@@ -38,7 +38,7 @@
         android:id="@+id/imageView2"
         android:layout_width="167dp"
         android:layout_height="170dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AddQuiz1"
@@ -46,28 +46,16 @@
 
     <LinearLayout
         android:id="@+id/LinearLayout01"
-        android:layout_width="378dp"
-        android:layout_height="271dp"
+        android:layout_width="374dp"
+        android:layout_height="285dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="19dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
-
-        <EditText
-            android:id="@+id/editTextTextPersonName12"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginBottom="15sp"
-            android:background="@drawable/input_fields"
-            android:backgroundTint="@color/InputFiels"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/QuizName"
-            android:inputType="textPersonName"
-            android:paddingBottom="15sp" />
 
         <EditText
             android:id="@+id/editTextTextPersonName14"
@@ -78,9 +66,22 @@
             android:backgroundTint="@color/InputFiels"
             android:ems="10"
             android:gravity="center"
-            android:hint="@string/NoOfQuestions"
             android:inputType="textPersonName"
-            android:paddingBottom="15sp" />
+            android:paddingBottom="15sp"
+            android:text="Quiz Name : Scinece chapter 5" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName19"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/input_fields"
+            android:backgroundTint="@color/InputFiels"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:paddingBottom="15sp"
+            android:text="No.Of Question : 15" />
 
         <EditText
             android:id="@+id/editTextTextPersonName15"
@@ -91,7 +92,7 @@
             android:backgroundTint="@color/InputFiels"
             android:ems="10"
             android:gravity="center"
-            android:hint="@string/GradeQuiz"
+            android:text="Grade : 11"
             android:inputType="textPersonName"
             android:paddingBottom="15sp" />
 
@@ -104,19 +105,33 @@
             android:backgroundTint="@color/InputFiels"
             android:ems="10"
             android:gravity="center"
-            android:hint="@string/Course"
+            android:text="Course : Science OL"
             android:inputType="textPersonName" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/AddQuizbtn"
-        android:layout_width="164dp"
-        android:layout_height="55dp"
+        android:id="@+id/button2"
+        android:layout_width="112dp"
+        android:layout_height="57dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/register_button"
-        android:text="@string/CreateQuiz"
+        android:text="Edit quiz"
         android:textColor="#FEFEFE"
         app:layout_constraintEnd_toEndOf="@+id/LinearLayout01"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LinearLayout01"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout01" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="112dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/register_button"
+        android:text="Delete Quiz"
+        android:textColor="#FEFEFE"
+        app:layout_constraintEnd_toEndOf="@+id/LinearLayout01"
+        app:layout_constraintHorizontal_bias="0.984"
         app:layout_constraintStart_toStartOf="@+id/LinearLayout01"
         app:layout_constraintTop_toBottomOf="@+id/LinearLayout01" />
 

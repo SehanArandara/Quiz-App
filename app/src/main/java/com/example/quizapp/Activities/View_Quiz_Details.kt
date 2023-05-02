@@ -6,17 +6,19 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.quizapp.R
 
-class Add_Quiz_Info : AppCompatActivity() {
+class View_Quiz_Details : AppCompatActivity() {
 
-    private  lateinit var AddQuizbtn : Button
+    private lateinit var  button11 : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_quiz_info)
+        setContentView(R.layout.activity_view_quiz_details)
 
-        AddQuizbtn = findViewById(R.id.AddQuizbtn)
-        AddQuizbtn.setOnClickListener {
-            var intent = Intent(this,Add_Single_Quiz::class.java)
+        button11 = findViewById(R.id.button11)
+        button11.setOnClickListener {
+            var intent = Intent(this,View_Quiz_Details::class.java)
             startActivity(intent)
         }
+
     }
 }
