@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Add_Single_Quiz">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="439dp"
+        android:layout_height="417dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/input_fields"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="195dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/single_quiz1" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="154dp"
+        android:fontFamily="@font/oswald"
+        android:textColor="#D8DDE2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Quesion1" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="389dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/input_fields"
+        android:backgroundTint="@color/InputFiels"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Question "
+        android:inputType="textPersonName"
+        android:paddingBottom="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/LinearLayout01"
+        app:layout_constraintStart_toStartOf="@+id/LinearLayout01"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_fields"
+        android:backgroundTint="@color/InputFiels"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Correct Option "
+        android:inputType="textPersonName"
+        android:paddingBottom="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout01" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="360dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="460dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView12">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName12"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/input_fields"
+            android:backgroundTint="@color/InputFiels"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Option1"
+            android:inputType="textPersonName"
+            android:paddingBottom="15sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName14"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/input_fields"
+            android:backgroundTint="@color/InputFiels"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Option2"
+            android:inputType="textPersonName"
+            android:paddingBottom="15sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName15"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/input_fields"
+            android:backgroundTint="@color/InputFiels"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Option3"
+            android:inputType="textPersonName"
+            android:paddingBottom="15sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName13"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/input_fields"
+            android:backgroundTint="@color/InputFiels"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Option4"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/register_button"
+        android:text="@string/Next"
+        android:textColor="#FEFEFE"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corners"
+        app:itemIconTint="#ffff"
+        app:itemTextColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
