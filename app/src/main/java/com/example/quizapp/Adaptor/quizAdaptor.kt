@@ -13,7 +13,8 @@ class quizAdaptor (private val quizList :ArrayList<Quiz>) :
     RecyclerView.Adapter<quizAdaptor.ViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-      val quizView = LayoutInflater.from(parent.context).inflate(R.layout.activity_single_quiz,parent,false)
+      val quizView = LayoutInflater.from(parent.context)
+          .inflate(R.layout.activity_single_quiz,parent,false)
 
         return ViewHolder(quizView)
     }
