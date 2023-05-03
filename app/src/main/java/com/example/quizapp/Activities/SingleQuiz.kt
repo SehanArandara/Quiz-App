@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.quizapp.R
 
-class List_item_quiz : AppCompatActivity() {
+class SingleQuiz : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list_item_quiz)
+        setContentView(R.layout.activity_single_quiz)
     }
 }

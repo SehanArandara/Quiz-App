@@ -44,96 +44,255 @@
         app:layout_constraintTop_toBottomOf="@+id/AddQuiz1"
         app:srcCompat="@drawable/undraw_questions_re_1fy7" />
 
+
     <LinearLayout
-        android:id="@+id/LinearLayout01"
-        android:layout_width="374dp"
-        android:layout_height="285dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="19dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName14"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginBottom="15sp"
-            android:background="@drawable/input_fields"
-            android:backgroundTint="@color/InputFiels"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:paddingBottom="15sp"
-            android:text="Quiz Name : Scinece chapter 5" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName19"
+        <LinearLayout
+            android:id="@+id/id_lin"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginBottom="15sp"
-            android:background="@drawable/input_fields"
-            android:backgroundTint="@color/InputFiels"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:paddingBottom="15sp"
-            android:text="No.Of Question : 15" />
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
 
-        <EditText
-            android:id="@+id/editTextTextPersonName15"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginBottom="15sp"
-            android:background="@drawable/input_fields"
-            android:backgroundTint="@color/InputFiels"
-            android:ems="10"
-            android:gravity="center"
-            android:text="Grade : 11"
-            android:inputType="textPersonName"
-            android:paddingBottom="15sp" />
+            >
 
-        <EditText
-            android:id="@+id/editTextTextPersonName13"
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Quiz id"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/viewQuizName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/contact_lin"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginBottom="15sp"
-            android:background="@drawable/input_fields"
-            android:backgroundTint="@color/InputFiels"
-            android:ems="10"
-            android:gravity="center"
-            android:text="Course : Science OL"
-            android:inputType="textPersonName" />
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Quiz Name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvEmpName1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/tvEmpName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Course"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/tvEmpAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:text="Grade"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/tvEmpSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/updateQuizBtn"
         android:layout_width="112dp"
         android:layout_height="57dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="126dp"
         android:background="@drawable/register_button"
         android:text="Edit quiz"
         android:textColor="#FEFEFE"
-        app:layout_constraintEnd_toEndOf="@+id/LinearLayout01"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/LinearLayout01"
-        app:layout_constraintTop_toBottomOf="@+id/LinearLayout01" />
+        app:layout_constraintEnd_toStartOf="@+id/deleteQuizBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/deleteQuizBtn"
         android:layout_width="112dp"
         android:layout_height="57dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/register_button"
         android:text="Delete Quiz"
         android:textColor="#FEFEFE"
-        app:layout_constraintEnd_toEndOf="@+id/LinearLayout01"
-        app:layout_constraintHorizontal_bias="0.984"
-        app:layout_constraintStart_toStartOf="@+id/LinearLayout01"
-        app:layout_constraintTop_toBottomOf="@+id/LinearLayout01" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

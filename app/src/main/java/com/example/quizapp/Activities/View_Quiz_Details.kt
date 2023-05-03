@@ -14,11 +14,7 @@ class View_Quiz_Details : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_quiz_details)
 
-        button11 = findViewById(R.id.button11)
-        button11.setOnClickListener {
-            var intent = Intent(this,View_Quiz_Details::class.java)
-            startActivity(intent)
-        }
+
 
     }
 }

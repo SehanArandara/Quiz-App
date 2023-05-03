@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         }
         samplebtn2 = findViewById(R.id.samplebtn2)
 
-        samplebtn2.setOnClickListener {
-            var intent = Intent(this,View_All_Quizes::class.java)
+       samplebtn2.setOnClickListener {
+            var intent = Intent(this,ViewQuizes::class.java)
             startActivity(intent)
         }
     }
