@@ -12,11 +12,19 @@ import com.example.quizapp.R
 class quizAdaptor (private val quizList :ArrayList<Quiz>) :
     RecyclerView.Adapter<quizAdaptor.ViewHolder>(){
 
+    private lateinit var mListener :onItemClickListener
+
+    interface onItemClickListener{
+        fun onItemClick(position: Int)
+    }
+    fun setOnItemClickListener(clickListener: onItemClickListener){
+        mListener = clickListener
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
       val quizView = LayoutInflater.from(parent.context)
           .inflate(R.layout.activity_single_quiz,parent,false)
 
-        return ViewHolder(quizView)
+        return ViewHolder(quizView,mListener)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -28,8 +36,14 @@ class quizAdaptor (private val quizList :ArrayList<Quiz>) :
         return quizList.size
     }
 
-    class ViewHolder(itemView:View) :RecyclerView.ViewHolder(itemView){
+    class ViewHolder(itemView:View,clickListener: onItemClickListener) :RecyclerView.ViewHolder(itemView){
             val tvQuizName : TextView = itemView.findViewById(R.id.tvQuizName)
+
+            init {
+                itemView.setOnClickListener {
+                    clickListener.onItemClick(adapterPosition)
+                }
+            }
     }
 
 

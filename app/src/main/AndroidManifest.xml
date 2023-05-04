@@ -11,6 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Activities.DialogQuizInfo"
+            android:exported="false" />
         <activity
             android:name=".Activities.SingleQuiz"
             android:exported="false" />
